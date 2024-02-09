@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+              /*
+            Medidas Absolutas
+            cm, mm, in, px, pt, pc
+
+            Medidas Relativas
+            em, ex, rem, vw, vh, %
+
+            16 px, geralmente = 1 em. 
+            Recomendação oficial: Usar sempre px ou em, dando sempre prioridade ao em.
+            */
+            font-size: 1em ;
+            /* lighter, normal, bold, bolder 
+            Também pode ser feito por números, de 100 à 900.*/  
+        }
+
+        h1 {
+            /* shorthand font(mãozinha)
+            font-family: 'work Sans', sans-serif;
+            font-wieght: bolder; 
+            font-size: 3em;
+            font-style: italic; 
+            
+            Posso simplificar com shorthand, seguindo a ordem: 
+            font-style -> font-weight -> font-size -> font-family 
+            ESSA ORDEM DEVE SER SEGUIDA A RISCA. NÃO PODE SER ALTERADA.*/
+            font: italic bolder 3em 'work Sans', sans-serif;
+        }
+        h2{
+            font: bold 2em 'work Sans';
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com Fontes</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque corrupti repudiandae perferendis quis illo consequuntur, commodi nesciunt harum consequatur reiciendis, veritatis officiis dolorum nihil blanditiis suscipit voluptatem. Quibusdam, mollitia minus.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque, exercitationem, molestiae quasi aut nesciunt nihil eligendi voluptates at, animi ipsa nisi labore? Magni maxime necessitatibus inventore eaque assumenda nostrum consequatur!</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur eum porro reprehenderit perferendis, error dolores aspernatur facere esse provident sequi fuga alias neque suscipit repellat est obcaecati consectetur, harum ullam.</p>
+
+    <h2>Subtítulo do exercício</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio asperiores molestias consequuntur ipsum similique rerum labore provident, voluptatibus facere atque eius! Totam explicabo inventore accusamus est labore, unde dolore vero.</p>
+</body>
+</html>

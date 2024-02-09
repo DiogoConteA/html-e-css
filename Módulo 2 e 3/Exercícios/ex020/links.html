@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+       /*
+            SELETORES PERSINALIZADOS.
+            #  = id 
+            .  = class
+            :  = pseudo-class
+            :: = pseudo-element
+            >  = clildren (fihlo)
+Simbologias vistas no CSS nesse capítulo.
+       */
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        u {
+            text-decoration: none;/*O link fica sem o underline. Aqui deu certo.*/
+        }
+
+        a {
+            color: red;
+            text-decoration: none; /*O link fica sem o underline. Aqui eu não sei o porque não saiu.*/
+            font-weight: bold;
+        }
+
+        a:visited { /*Quando o site for visitado o link aparecerá com as seguintes configurações*/
+            color: darkred;
+        }
+
+        a:hover { /*Quando o mouse passar sobre os links aparecerão as configurações daqui.*/
+            color: black;
+            text-decoration: underline;
+        }
+
+        a:active { /*Quando está ativo. Ao clicar no link, o link ficará com essaas configurações.*/
+            color: yellow;
+        }
+
+        /*a::after { 
+            content: '[link]';
+            text-decoration: none;
+            font-weight: normal;
+            color: darkgray;
+        }
+         Um dos exemplos.*/
+
+        .especial::before{
+            content: '⇒';
+        }
+
+         .especial::after{
+            content: '⇐';
+         }
+
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <u>
+        <li><a href="https://github.com/DiogoConteA" target="_blank">Meu Repositório GitHub.</a></li>
+         <!-- Recordando: O _blanck é para abrir o link em outra aba-->
+        <li><a href="https://youtube.com/cursoemvideo/" class="especial">Canal do YouTube CursoemVídeo.</a></li>
+        <li><a href="https://www.cursoemvideo.com">Site do CursoemVídeo</a></li>
+    </u>
+   
+</body>
+</html>

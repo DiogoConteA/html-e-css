@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframe</title>
+</head>
+<body>
+    <h1>Meu site principal</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos totam atque voluptatibus in tenetur praesentium! Exercitationem, aspernatur quae odio fugiat veniam aliquid aut laboriosam nobis. Quibusdam earum minima beatae nam.</p>
+
+    <!--<iframe src="paginas-extras/pg04.html" sandbox="sandbox" referrerpolicy="no-referrer">
+        Seu navegador não é compatível com isso...
+    </iframe> 
+    AQUI O SITE ESTÁ PROTEGENDO NO MÁXIMO QUE CONSEGUE-->
+
+    <iframe src="paginas-extras/pg04.html" sandbox="allow-same-origin allow-forms allow-scripts" referrerpolicy="no-referrer">
+        Seu navegador não é compatível com isso...
+    </iframe> 
+    <!--AQUI O SITE ESTÁ PERMITINDO CONTEÚDO DA MESMA ORIGEM, PERMITINDO FORMULÁRIOS E PERMITINDO SCRIPRS PORQUE NO HTML5 ELE EXECUTA SCRIPIT QUANDO EXECUTA UM FORMULÁRIO
+    OBS.: SOMENTE NESSE IFRAME ESTARÁ AUTORIZADO DEVIDO A ESSA COMFIGURAÇÃO-->
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur obcaecati amet accusantium natus adipisci a, unde consectetur nihil rem dolorum facere ratione sunt voluptas inventore excepturi voluptatibus dicta optio id?</p>
+</body>
+</html>

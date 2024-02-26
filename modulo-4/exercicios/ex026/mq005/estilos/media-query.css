@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+/*Typical Devaice Breakpoints
+-----------------------------------
+Pequenas telas: até 600 px;
+Celular: de 600px até 763px;
+Tablet: de 768px até 992px;
+Desketop: de 992px até 1200px;
+Grandes telas: acima e 1200px;
+----------------------------------
+*/
+
+@media screen and (min-width: 768px) {
+   
+    span#burguer{
+        display: none;
+    }
+
+    menu {
+        display: block;
+    }
+    
+    menu > ul > li{
+        display: inline-block;
+    }
+
+    main {
+        width: 768px;
+    }
+} 
+/*Telas pequenas, até 768 vai mostra o menu de hamburguer, a cima disso, vai mostrar o menu como ele é.*/
+

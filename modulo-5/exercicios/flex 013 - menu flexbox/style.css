@@ -17,14 +17,45 @@ body{
 header{
     background-color: gray;
     padding: 10px;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    /*O header é flex e controla o h1 e o nav. Mas o nav é flex também.  */
 }
 
 header > h1{
+    border: 1px dotted black;
     color: white;
+    flex: 0 0 200px;
+    /* Esse não é flexível. */
 }
 
 header > nav{
+    border: 1px dotted black;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    /* O menu é um flex interno. */
+}
 
+header > nav > a{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+
+    /* Os links (a) serão itens do elemento flexível nav.  */
+}
+
+header > nav > a:hover{
+    background-color: white;
+    color: black;
+    transition: background-color 0.5s;
 }
 
 main{
